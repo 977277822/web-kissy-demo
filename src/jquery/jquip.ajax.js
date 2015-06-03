@@ -1,6 +1,8 @@
 /**
- *  require model ajax
- *  ajax
+ * requery ajax-jquery file
+ * jquip convert requireJd model.
+ * rely models ["dom"]
+ * Created by zxb on 2015/6/3.
  */
 define(["dom"],function ($) {
     $['plug']("ajax", function ($) {
