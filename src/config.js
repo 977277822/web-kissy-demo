@@ -14,14 +14,15 @@
             "ajax": "jquery/jquip.ajax",
             "event": "jquery/jquip.events",
             "ready": "jquery/jquip.docready",
-            "formvalidation": "jquery/jquery.validationEngine"
+            "formvalidation": "jquery/formvalidation/jquery.validationEngine",
+            "formvalidationLang": "jquery/formvalidation/jquery.validationEngine-zh_CN"
         },
         map: {
             '*': {
                 'css': 'jquery/css'
             }
         }, shim: {
-            'formvalidation': ['css!jquery/formvalidation/validationEngine.jquery.css']
+            'formvalidation': ["css!jquery/formvalidation/validationEngine.jquery.css","formvalidationLang"]
         }
     });
 })();
