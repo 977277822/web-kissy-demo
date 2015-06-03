@@ -7,12 +7,21 @@
 (function () {
     require.config({
         baseUrl: "../src/",
+        waitSeconds: 15,
         paths: {
             "dom": "jquery/jquip",
             "css": "jquery/jquip.css",
             "ajax": "jquery/jquip.ajax",
             "event": "jquery/jquip.events",
-            "ready": "jquery/jquip.docready"
+            "ready": "jquery/jquip.docready",
+            "formvalidation": "jquery/jquery.validationEngine"
+        },
+        map: {
+            '*': {
+                'css': 'jquery/css'
+            }
+        }, shim: {
+            'formvalidation': ['css!jquery/formvalidation/validationEngine.jquery.css']
         }
     });
 })();
