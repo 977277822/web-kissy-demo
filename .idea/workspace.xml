@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be109520-2f90-4b6d-899b-7f78b7336c14" name="Default" comment="" />
+    <list default="true" id="be109520-2f90-4b6d-899b-7f78b7336c14" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/config.js" afterPath="$PROJECT_DIR$/src/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="wlnet.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,21 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3206751">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquip.ajax.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/jquery/jquip.ajax.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="46" selection-start-line="0" selection-start-column="0" selection-end-line="190" selection-end-column="3" />
+            <state vertical-scroll-proportion="-6.785714">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -55,7 +48,7 @@
         <entry file="file://$PROJECT_DIR$/src/config.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -65,34 +58,20 @@
         <entry file="file://$PROJECT_DIR$/src/jquery/jquip.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="377" column="47" selection-start-line="377" selection-start-column="47" selection-end-line="377" selection-end-column="47" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="3" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <marker date="1433301819366" expanded="true" signature="42719:42752" placeholder="..." />
+                <marker date="1433313652830" expanded="true" signature="42727:42760" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquip.events.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="jquip.events.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/jquery/jquip.events.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.1285521">
+              <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquip.css.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/jquery/jquip.css.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="69" column="59" selection-start-line="69" selection-start-column="56" selection-end-line="69" selection-end-column="59" />
-              <folding>
-                <marker date="1433301828831" expanded="true" signature="8434:8527" placeholder="..." />
-                <marker date="1433301828831" expanded="true" signature="8560:8653" placeholder="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -116,12 +95,12 @@
         <option value="$PROJECT_DIR$/test.txt" />
         <option value="$PROJECT_DIR$/src/jquery/jquip.q-min.js" />
         <option value="$PROJECT_DIR$/src/jquery/jquip.css.js" />
-        <option value="$PROJECT_DIR$/src/jquery/jquip.js" />
         <option value="$PROJECT_DIR$/src/jquery/jquip.ajax.js" />
-        <option value="$PROJECT_DIR$/src/jquery/jquip.events.js" />
-        <option value="$PROJECT_DIR$/src/config.js" />
-        <option value="$PROJECT_DIR$/test/test.html" />
         <option value="$PROJECT_DIR$/src/require.js" />
+        <option value="$PROJECT_DIR$/test/test.html" />
+        <option value="$PROJECT_DIR$/src/config.js" />
+        <option value="$PROJECT_DIR$/src/jquery/jquip.js" />
+        <option value="$PROJECT_DIR$/src/jquery/jquip.events.js" />
       </list>
     </option>
   </component>
@@ -290,14 +269,22 @@
       <option name="number" value="Default" />
       <updated>1433296079692</updated>
     </task>
+    <task id="LOCAL-00001" summary="提交">
+      <created>1433313813146</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1433313813146</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24027778" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24027778" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294271" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -317,6 +304,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="提交" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -360,8 +351,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <marker date="1433301819366" expanded="true" signature="42719:42752" placeholder="..." />
+            <marker date="1433313652830" expanded="true" signature="42727:42760" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -379,8 +369,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="69" column="59" selection-start-line="69" selection-start-column="56" selection-end-line="69" selection-end-column="59" />
           <folding>
-            <marker date="1433301828831" expanded="true" signature="8434:8527" placeholder="..." />
-            <marker date="1433301828831" expanded="true" signature="8560:8653" placeholder="..." />
+            <marker date="1433301828831" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1433301828831" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -420,10 +410,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jquery/jquip.events.js">
+    <entry file="file://$PROJECT_DIR$/src/jquery/jquip.css.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+          <caret line="69" column="59" selection-start-line="69" selection-start-column="56" selection-end-line="69" selection-end-column="59" />
+          <folding>
+            <marker date="1433301828831" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1433301828831" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jquery/jquip.ajax.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
           <folding />
         </state>
       </provider>
@@ -436,48 +437,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jquery/jquip.ajax.js">
+    <entry file="file://$PROJECT_DIR$/test/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="46" selection-start-line="0" selection-start-column="0" selection-end-line="190" selection-end-column="3" />
+        <state vertical-scroll-proportion="-6.785714">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jquery/jquip.css.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="69" column="59" selection-start-line="69" selection-start-column="56" selection-end-line="69" selection-end-column="59" />
-          <folding>
-            <marker date="1433301828831" expanded="true" signature="8434:8527" placeholder="..." />
-            <marker date="1433301828831" expanded="true" signature="8560:8653" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jquery/jquip.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="377" column="47" selection-start-line="377" selection-start-column="47" selection-end-line="377" selection-end-column="47" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <marker date="1433301819366" expanded="true" signature="42719:42752" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test.html">
+    <entry file="file://$PROJECT_DIR$/src/jquery/jquip.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3206751">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="3" />
+          <folding>
+            <marker date="1433313652830" expanded="true" signature="42727:42760" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jquery/jquip.events.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1285521">
+          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
           <folding />
         </state>
       </provider>

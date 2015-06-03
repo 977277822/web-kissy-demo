@@ -1,14 +1,17 @@
 /**
- * Created by Administrator on 2015/6/3.
+ * requery config file
+ * if you need update config path , please modification BaseUrl.
+ * Created by zxb on 2015/6/3.
  */
 
-(function(){
+(function () {
     require.config({
-        paths : {
-            "dom" : "../src/jquery/jquip",
-            "css" : "../src/jquery/jquip.css",
-            "ajax" : "../src/jquery/jquip.ajax",
-            "event" : "../src/jquery/jquip.events"
+        baseUrl: "../src/",
+        paths: {
+            "dom": "jquery/jquip",
+            "css": "jquery/jquip.css",
+            "ajax": "jquery/jquip.ajax",
+            "event": "jquery/jquip.events"
         }
     });
 })();
