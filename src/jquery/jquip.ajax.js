@@ -190,4 +190,5 @@ define(["dom"],function ($) {
             $['loadAsync']("http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js");
 
     });
+    return $;
 });

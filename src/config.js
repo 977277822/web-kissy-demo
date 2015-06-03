@@ -11,7 +11,8 @@
             "dom": "jquery/jquip",
             "css": "jquery/jquip.css",
             "ajax": "jquery/jquip.ajax",
-            "event": "jquery/jquip.events"
+            "event": "jquery/jquip.events",
+            "ready": "jquery/jquip.docready"
         }
     });
 })();

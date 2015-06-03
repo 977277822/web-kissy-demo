@@ -172,4 +172,5 @@ define(["dom"], function ($) {
         };
         if (!$['init']) $(window)['bind']("load", $['onload']);
     });
+    return $;
 });
