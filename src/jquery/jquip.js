@@ -1,7 +1,8 @@
 /**
- * require model dom
+ * requery base-jquery file
+ * jquip convert requireJd model.
+ * Created by zxb on 2015/6/3.
  */
-/*jshint sub:true, regexdash:true, laxbreak: true, expr: true*/
 define(function () {
     window['$'] = window['jquip'] = (function () {
         var win = window,
