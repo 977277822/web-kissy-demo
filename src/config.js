@@ -9,19 +9,7 @@
         baseUrl: "../src/",
         waitSeconds: 15,
         paths: {
-            "dom": "jquery/jquip",
-            "css": "jquery/jquip.css",
-            "ajax": "jquery/jquip.ajax",
-            "event": "jquery/jquip.events",
-            "ready": "jquery/jquip.docready"
-        },
-        map: {
-            '*': {
-                'css': 'jquery/css'
-            }
+            "jquery": "jquery"
         }
-       // ,shim: {
-       //     'formvalidation': ["css!jquery/formvalidation/validationEngine.jquery.css","formvalidationLang"]
-       // }
     });
 })();
