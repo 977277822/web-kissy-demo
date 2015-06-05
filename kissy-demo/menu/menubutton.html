@@ -16,26 +16,26 @@
          */
         require(["menu", "menubutton", "menu/assets/dpl.css", "menubutton/assets/dpl.css"], function (Menu, MenuButton) {
             var menuButton = new MenuButton({
-                content : "button",
-                render : "#container",
-                tooltip : "button",
+                content: "button",
+                render: "#container",
+                tooltip: "button",
                 //下拉菜单是否和按钮宽度一致
-                matchElWidth : false,
-                elCls : "ks-button-info ks-button-large",
-                menu : {
-                    xclass : "popupmenu",
-                    children : [
+                matchElWidth: false,
+                elCls: "ks-button-info ks-button-large",
+                menu: {
+                    xclass: "popupmenu",
+                    children: [
                         {
-                            xclass : "menuitem",
-                            content : "item1"
+                            xclass: "menuitem",
+                            content: "item1"
                         },
                         {
-                            xclass : "menuitem",
-                            content : "item2"
+                            xclass: "menuitem",
+                            content: "item2"
                         }
                     ],
-                    listeners : {
-                        click : function(ev){
+                    listeners: {
+                        click: function (ev) {
                             console.log(ev.target.get('content'));
                         }
                     }
