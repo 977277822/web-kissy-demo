@@ -2,16 +2,29 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <script src="../src/require.js"></script>
-    <script src="../src/config.js"></script>
+    <script src="../src/kissy/seed-debug.js"></script>
     <script>
-        require(["dom","ajax"],function(a){
-            console.log($.ajax)
+        require.config({
+            packages: {
+                "tag":"111",
+                "kissy-base":"../src/kissy",
+                "charset" : "utf-8"
+            }
+        });
+
+        require(["button","button/assets/dpl.css"],function(Button){
+            var button1 = new Button({
+                content : 'ButtonContent',
+                render : '#container',
+                width : '150px',
+                elCls : 'ks-button-success'
+            });
+            button1.render();
         });
     </script>
     <title></title>
 </head>
 <body>
-
+<div id="container"></div>
 </body>
 </html>

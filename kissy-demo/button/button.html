@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="../../src/kissy/seed-debug.js"></script>
+    <style>
+        fieldset textarea {
+            width: 500px;
+            height: 300px;
+        }
+    </style>
+    <script>
+        require(["button", "button/assets/dpl.css"], function (Button) {
+            var button1 = new Button({
+                content: 'ButtonContent',
+                render: '#container',
+                width: '150px',
+                height: "30px",
+                elCls: 'ks-button-success',
+                tooltip: "11"
+            });
+            button1.on("click", function () {
+                alert(1)
+            });
+            button1.render();
+        });
+    </script>
+    <title></title>
+</head>
+<body>
+<fieldset>
+    <legend>button控件效果展示</legend>
+    <div id="container"></div>
+</fieldset>
+<fieldset>
+    <legend>属性</legend>
+    <pre>
+        content：内容展示
+        render：目标对象
+        width：控件宽度
+        height：控件高度
+        elCls ： 控件样式
+        tooltip：鼠标悬停显示的文字
+    </pre>
+</fieldset>
+<fieldset>
+    <legend>事件</legend>
+    <pre>
+        button1.on("click",function(){alert(1)});
+        使用方式与普通dom元素事件绑定类似。
+    </pre>
+</fieldset>
+<fieldset>
+    <legend>button控件代码展示</legend>
+    <pre>
+        require(["button","button/assets/dpl.css"],function(Button){
+            var button1 = new Button({
+                content : 'ButtonContent',
+                render : '#container',
+                width : '150px',
+                height : "30px",
+                elCls : 'ks-button-success',
+                tooltip : "11"
+            });
+            button1.on("click",function(){alert(1)});
+            button1.render();
+        });
+    </pre>
+</fieldset>
+</body>
+</html>
