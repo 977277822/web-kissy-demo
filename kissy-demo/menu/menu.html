@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="../../src/kissy/seed-debug.js"></script>
+    <style>
+        fieldset textarea {
+            width: 500px;
+            height: 300px;
+
+        }
+
+        #container {
+            width: 50px;
+            height: 20px;
+            display: block;
+            border: 1px solid #000;
+        }
+    </style>
+    <script>
+        /**
+         * node ：dom模块
+         * menu ：菜单模块
+         * separator ：分割线模块
+         */
+        require(["node", "menu", "separator", "menu/assets/dpl.css"], function (Node, Menu, Separator) {
+            //获取目标控件
+            var targetWidget = Node.all("#container"), menu;
+            //目标控件绑定事件
+            targetWidget.on("click", function () {
+                //判断menu对象是否已创建，已创建则显示
+                if (menu) {
+                    menu.show();
+                }
+                //创建menu对象
+                else {
+                    menu = new Menu({
+                        width: 150,
+                        render: "#container",
+                        children: [
+                            {
+                                xclass: "menuitem",
+                                content: "item1"
+                            },
+                            {
+                                xclass: "separator"
+                            },
+                            {
+                                xclass: "submenu",
+                                content: "submenu",
+                                menu: new Menu.PopupMenu({
+                                    autoHideOnMouseLeave: true,
+                                    width: 150,
+                                    children: [{
+                                        xclass: "menuitem",
+                                        content: "item1_1"
+                                    }]
+                                })
+                            }
+                        ]
+                    });
+                    menu.on("blur", function () {
+                        menu.hide();
+                    });
+                    menu.render();
+                }
+                menu.focus();
+            });
+        });
+    </script>
+    <title></title>
+</head>
+<body>
+<fieldset>
+    <legend>menu控件效果展示</legend>
+    <div id="container">menu</div>
+</fieldset>
+<fieldset>
+    <legend>属性</legend>
+    <pre>
+        content：内容展示
+        render：目标对象
+        children：菜单项
+    </pre>
+</fieldset>
+<fieldset>
+    <legend>事件</legend>
+    <pre>
+        //菜单绑定失去焦点事件
+         menu.on("blur", function () {
+            menu.hide();
+         });
+    </pre>
+</fieldset>
+<fieldset>
+    <legend>控件代码展示</legend>
+    <pre>
+         /**
+         * node ：dom模块
+         * menu ：菜单模块
+         * separator ：分割线模块
+         */
+        require(["node", "menu", "separator", "menu/assets/dpl.css"], function (Node, Menu, Separator) {
+            //获取目标控件
+            var targetWidget = Node.all("#container"), menu;
+            //目标控件绑定事件
+            targetWidget.on("click", function () {
+                //判断menu对象是否已创建，已创建则显示
+                if (menu) {
+                    menu.show();
+                }
+                //创建menu对象
+                else {
+                    menu = new Menu({
+                        width: 150,
+                        render: "#container",
+                        children: [
+                            {
+                                xclass: "menuitem",
+                                content: "item1"
+                            },
+                            {
+                                xclass: "separator"
+                            },
+                            {
+                                xclass: "submenu",
+                                content: "submenu",
+                                menu: new Menu.PopupMenu({
+                                    autoHideOnMouseLeave: true,
+                                    width: 150,
+                                    children: [{
+                                        xclass: "menuitem",
+                                        content: "item1_1"
+                                    }]
+                                })
+                            }
+                        ]
+                    });
+                    menu.on("blur", function () {
+                        menu.hide();
+                    });
+                    menu.render();
+                }
+                menu.focus();
+            });
+        });
+    </pre>
+</fieldset>
+</body>
+</html>
