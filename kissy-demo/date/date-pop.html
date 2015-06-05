@@ -16,9 +16,7 @@
          * gregorian-calendar-format 时间日期格式化插件模块
          */
         require(["node", 'date-picker', "gregorian-calendar-format", "date-picker/assets/dpl.css"], function (node, DatePicker, DateFormat) {
-            var datePop = new DatePicker.Popup(), result = node.all("#result");
-            //创建时间日期控件，页面上未显示出来。
-            datePop.render();
+            var datePop = new DatePicker.Popup({shim: true}), result = node.all("#result"), dataButton = node.all("#openDate");
             //绑定时间日期选中事件
             datePop.on('select', function (e) {
                 var value = e.value;
@@ -30,16 +28,22 @@
                 //时间日期隐藏
                 datePop.hide();
             });
+            //焦点离开日期控件后隐藏日期空间
+            datePop.on("blur", function () {
+                datePop.hide();
+            });
             //给按钮绑定单击事件，单击按钮弹出时间日期控件
-            node.all("#openDate").on("click", function (e) {
+            dataButton.on("click", function (e) {
                 //计算时间日期框应该弹出的坐标位置
-                var t = e.target, eTop = t.offsetTop, eLeft = t.offsetLeft, eHeight = t.offsetHeight, eWidgth = t.offsetWidth, dTop = eTop + eHeight, dLeft = eLeft;
-                //设置x坐标位置
-                datePop.set("x", dLeft);
-                //设置y坐标位置
-                datePop.set("y", dTop);
+                datePop.set('align', {
+                    node: this,
+                    points: ['bl', 'tl']
+                });
                 //显示时间日期层
                 datePop.show();
+                //焦点给日期控件
+                datePop.focus();
+
             });
         });
     </script>
