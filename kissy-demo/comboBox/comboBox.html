@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="../../src/kissy/seed-debug.js"></script>
+    <style>
+        fieldset textarea {
+            width: 500px;
+            height: 300px;
+        }
+    </style>
+    <script>
+        require(['combobox','combobox/assets/dpl.css'], function (ComboBox) {
+            var basicComboBox = new ComboBox({
+                render: '#container',
+                dataSource: new ComboBox.LocalDataSource({
+                    data: ['a1234', 'b2345', 'c3456', 'd4567']
+                }),
+                maxItemCount: 4,
+                format: function (query, data) {  //自定义下拉菜单属性
+                    console.log(query)
+                    var ret = [];
+                    for (var i = 0; i < data.length; i++) {
+                        ret[i] = {
+                            content: (data[i] + ""),
+                            disabled: (i % 2 ? true : false)
+                        }
+                    }
+                    return ret;
+                }
+            });
+            basicComboBox.render();
+        })
+    </script>
+    <title></title>
+</head>
+<body>
+<fieldset>
+    <legend>combobox控件效果展示</legend>
+    <div id="container"></div>
+</fieldset>
+<fieldset>
+    <legend>属性</legend>
+    <pre>
+        dataSource：下拉菜单项
+        render：目标对象
+        width：控件宽度
+        height：控件高度
+        maxItemCount ： 最大菜单项数量
+        format：自定义下拉菜单属性
+    </pre>
+</fieldset>
+<fieldset>
+    <legend>事件</legend>
+    <pre>
+    </pre>
+</fieldset>
+<fieldset>
+    <legend>combobox控件代码展示</legend>
+    <pre>
+         require(['combobox','combobox/assets/dpl.css'], function (ComboBox) {
+            var basicComboBox = new ComboBox({
+                render: '#container',
+                dataSource: new ComboBox.LocalDataSource({
+                    data: ['a1234', 'b2345', 'c3456', 'd4567']
+                }),
+                maxItemCount: 4,
+                format: function (query, data) {  //自定义下拉菜单属性
+                    console.log(query)
+                    var ret = [];
+                    for (var i = 0; i < data.length; i++) {
+                        ret[i] = {
+                            content: (data[i] + ""),
+                            disabled: (i % 2 ? true : false)
+                        }
+                    }
+                    return ret;
+                }
+            });
+            basicComboBox.render();
+        })
+    </pre>
+</fieldset>
+</body>
+</html>

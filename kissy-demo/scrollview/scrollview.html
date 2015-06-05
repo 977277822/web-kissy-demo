@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="../../src/kissy/seed-debug.js"></script>
+    <style>
+        fieldset textarea {
+            width: 500px;
+            height: 300px;
+        }
+    </style>
+    <script>
+        require(['scroll-view',"scroll-view/assets/dpl.css"], function(ScrollView){
+            var content = '';
+            for (var i = 0; i < 10; i++) {
+                content += '<p>This is ' + i + ' block</p>';
+            }
+            var myScrollView = new ScrollView({
+                width : 318,
+                height : 360,
+                render : '#scroll-view-contaienr',
+                content : content
+            });
+            myScrollView.render();
+        })
+    </script>
+    <title></title>
+</head>
+<body>
+<fieldset>
+    <legend>scroll-view（滚动视图）控件效果展示</legend>
+    <div id="scroll-view-contaienr"></div>
+</fieldset>
+<fieldset>
+    <legend>属性</legend>
+    <pre>
+        content：内容展示
+        render：目标对象
+        width：控件宽度
+        height：控件高度
+    </pre>
+</fieldset>
+<fieldset>
+    <legend>事件</legend>
+    <pre>
+
+    </pre>
+</fieldset>
+<fieldset>
+    <legend>控件代码展示</legend>
+    <pre>
+        require(['scroll-view',"scroll-view/assets/dpl.css"], function(ScrollView){
+            var content = '';
+            for (var i = 0; i < 10; i++) {
+                content += '&lt;p>This is ' + i + ' block&lt;/p>';
+            }
+            var myScrollView = new ScrollView({
+                width : 318,
+                height : 360,
+                render : '#scroll-view-contaienr',
+                content : content
+            });
+            myScrollView.render();
+        })
+    </pre>
+</fieldset>
+</body>
+</html>
