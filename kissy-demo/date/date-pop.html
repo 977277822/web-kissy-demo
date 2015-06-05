@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="../../src/kissy/seed-debug.js"></script>
+    <style>
+        fieldset textarea {
+            width: 500px;
+            height: 300px;
+        }
+    </style>
+    <script>
+        /**
+         * node dom操作模块
+         * date-picker 时间弹出层模块
+         * gregorian-calendar-format 时间日期格式化插件模块
+         */
+        require(["node", 'date-picker', "gregorian-calendar-format", "date-picker/assets/dpl.css"], function (node, DatePicker, DateFormat) {
+            var datePop = new DatePicker.Popup(), result = node.all("#result");
+            //创建时间日期控件，页面上未显示出来。
+            datePop.render();
+            //绑定时间日期选中事件
+            datePop.on('select', function (e) {
+                var value = e.value;
+                if (value) {
+                    result.val(DateFormat.getDateInstance(DateFormat.Style.LONG).format(value));
+                } else {
+                    result.val('');
+                }
+                //时间日期隐藏
+                datePop.hide();
+            });
+            //给按钮绑定单击事件，单击按钮弹出时间日期控件
+            node.all("#openDate").on("click", function (e) {
+                //计算时间日期框应该弹出的坐标位置
+                var t = e.target, eTop = t.offsetTop, eLeft = t.offsetLeft, eHeight = t.offsetHeight, eWidgth = t.offsetWidth, dTop = eTop + eHeight, dLeft = eLeft;
+                //设置x坐标位置
+                datePop.set("x", dLeft);
+                //设置y坐标位置
+                datePop.set("y", dTop);
+                //显示时间日期层
+                datePop.show();
+            });
+        });
+    </script>
+    <title></title>
+</head>
+<body>
+<fieldset>
+    <legend>date-pop控件效果展示</legend>
+    <input type="text" id="result">
+    <button id="openDate">时间</button>
+</fieldset>
+<fieldset>
+    <legend>属性</legend>
+    <pre>
+        render：目标对象（可以不指定，在事件触发的时候渲染控件，降低页面加载时间）
+        x：设置空间x坐标值（原点为屏幕左上角（0,0））必须属性，不设置控件将不会显示
+        y：设置空间x坐标值（原点为屏幕左上角（0,0））必须属性，不设置控件将不会显示
+    </pre>
+</fieldset>
+<fieldset>
+    <legend>事件</legend>
+    <pre>
+        datePop.on('select', function (e) {
+                var value = e.value;
+                if (value) {
+                    result.val(DateFormat.getDateInstance(DateFormat.Style.LONG).format(value));
+                } else {
+                    result.val('');
+                }
+                datePop.hide();
+        });
+        时间控件选中后，回填值并关闭面板。
+    </pre>
+</fieldset>
+<fieldset>
+    <legend>控件代码展示</legend>
+    <pre>
+        /**
+         * node dom操作模块
+         * date-picker 时间弹出层模块
+         * gregorian-calendar-format 时间日期格式化插件模块
+         */
+        require(["node", 'date-picker', "gregorian-calendar-format", "date-picker/assets/dpl.css"], function (node, DatePicker, DateFormat) {
+            var datePop = new DatePicker.Popup(), result = node.all("#result");
+            //创建时间日期控件，页面上未显示出来。
+            datePop.render();
+            //绑定时间日期选中事件
+            datePop.on('select', function (e) {
+                var value = e.value;
+                if (value) {
+                    result.val(DateFormat.getDateInstance(DateFormat.Style.LONG).format(value));
+                } else {
+                    result.val('');
+                }
+                //时间日期隐藏
+                datePop.hide();
+            });
+            //给按钮绑定单击事件，单击按钮弹出时间日期控件
+            node.all("#openDate").on("click", function (e) {
+                //计算时间日期框应该弹出的坐标位置
+                var t = e.target, eTop = t.offsetTop, eLeft = t.offsetLeft, eHeight = t.offsetHeight, eWidgth = t.offsetWidth, dTop = eTop + eHeight, dLeft = eLeft;
+                //设置x坐标位置
+                datePop.set("x", dLeft);
+                //设置y坐标位置
+                datePop.set("y", dTop);
+                //显示时间日期层
+                datePop.show();
+            });
+        });
+    </pre>
+</fieldset>
+</body>
+</html>
+
+
