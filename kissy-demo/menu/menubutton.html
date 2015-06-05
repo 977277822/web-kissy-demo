@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="../../src/kissy/seed-debug.js"></script>
+    <style>
+        fieldset textarea {
+            width: 500px;
+            height: 300px;
+        }
+    </style>
+    <script>
+        /**
+         * menu : 菜单模块
+         * menubutton ： 按钮菜单模块
+         */
+        require(["menu", "menubutton", "menu/assets/dpl.css", "menubutton/assets/dpl.css"], function (Menu, MenuButton) {
+            var menuButton = new MenuButton({
+                content : "button",
+                render : "#container",
+                tooltip : "button",
+                //下拉菜单是否和按钮宽度一致
+                matchElWidth : false,
+                elCls : "ks-button-info ks-button-large",
+                menu : {
+                    xclass : "popupmenu",
+                    children : [
+                        {
+                            xclass : "menuitem",
+                            content : "item1"
+                        },
+                        {
+                            xclass : "menuitem",
+                            content : "item2"
+                        }
+                    ],
+                    listeners : {
+                        click : function(ev){
+                            console.log(ev.target.get('content'));
+                        }
+                    }
+                }
+            });
+            menuButton.render();
+        });
+    </script>
+    <title></title>
+</head>
+<body>
+<fieldset>
+    <legend>button控件效果展示</legend>
+    <div id="container"></div>
+</fieldset>
+<fieldset>
+    <legend>属性</legend>
+    <pre>
+        content：内容展示
+        render：目标对象
+        elCls ： 控件样式
+        tooltip：鼠标悬停显示的文字
+    </pre>
+</fieldset>
+<fieldset>
+    <legend>事件</legend>
+    <pre>
+        //菜单项事件
+       listeners : {
+            click : function(ev){
+                console.log(ev.target.get('content'));
+            }
+        }
+    </pre>
+</fieldset>
+<fieldset>
+    <legend>button控件代码展示</legend>
+    <pre>
+        /**
+         * menu : 菜单模块
+         * menubutton ： 按钮菜单模块
+         */
+        require(["menu", "menubutton", "menu/assets/dpl.css", "menubutton/assets/dpl.css"], function (Menu, MenuButton) {
+            var menuButton = new MenuButton({
+                content : "button",
+                render : "#container",
+                tooltip : "button",
+                //下拉菜单是否和按钮宽度一致
+                matchElWidth : false,
+                elCls : "ks-button-info ks-button-large",
+                menu : {
+                    xclass : "popupmenu",
+                    children : [
+                        {
+                            xclass : "menuitem",
+                            content : "item1"
+                        },
+                        {
+                            xclass : "menuitem",
+                            content : "item2"
+                        }
+                    ],
+                    listeners : {
+                        click : function(ev){
+                            console.log(ev.target.get('content'));
+                        }
+                    }
+                }
+            });
+            menuButton.render();
+        });
+    </pre>
+</fieldset>
+</body>
+</html>
