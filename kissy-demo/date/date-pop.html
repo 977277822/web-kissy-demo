@@ -16,7 +16,7 @@
          * gregorian-calendar-format 时间日期格式化插件模块
          */
         require(["node", 'date-picker', "gregorian-calendar-format", "date-picker/assets/dpl.css"], function (node, DatePicker, DateFormat) {
-            var datePop = new DatePicker.Popup({shim: true}), result = node.all("#result"), dataButton = node.all("#openDate");
+            var datePop = new DatePicker.Popup(), result = node.all("#result"), dataButton = node.all("#openDate");
             //绑定时间日期选中事件
             datePop.on('select', function (e) {
                 var value = e.value;
@@ -66,6 +66,7 @@
 <fieldset>
     <legend>事件</legend>
     <pre>
+        //时间控件选中后，回填值并关闭面板。
         datePop.on('select', function (e) {
                 var value = e.value;
                 if (value) {
@@ -75,7 +76,11 @@
                 }
                 datePop.hide();
         });
-        时间控件选中后，回填值并关闭面板。
+        //焦点离开日期控件后隐藏日期空间
+        datePop.on("blur", function () {
+                datePop.hide();
+        });
+
     </pre>
 </fieldset>
 <fieldset>
